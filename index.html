@@ -258,7 +258,7 @@ a{color:inherit}
     <a class="lnk" href="#fvn">Visual Novel</a>
     <a class="lnk hide-s" href="#about">About</a>
     <!-- EDIT: your GitHub profile -->
-    <a class="lnk" id="gh-top" href="https://github.com/YOUR-USERNAME">GitHub</a>
+    <a class="lnk" id="gh-top" href="https://github.com/xzgamesstudio">GitHub</a>
   </div>
 </nav>
 
@@ -304,8 +304,8 @@ a{color:inherit}
       <!-- EDIT: confirm formats + OS below, and point the button at your release -->
       <p class="rv" style="font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)">VST3 &middot; AU &middot; Windows / macOS &middot; 64-bit</p>
       <div class="hero-cta rv" style="margin-top:22px">
-        <a class="btn btn--solid" id="dl-de" href="https://github.com/YOUR-USERNAME/DeathEngine/releases/latest"><span class="dl">&#9660;</span><span>Download DeathEngine</span></a>
-        <a class="btn" id="src-de" href="https://github.com/YOUR-USERNAME/DeathEngine/releases"><span>All versions</span></a>
+        <a class="btn btn--solid" id="dl-de" href="https://github.com/xzgamesstudio/DeathEngine/releases/latest"><span class="dl">&#9660;</span><span>Download DeathEngine</span></a>
+        <a class="btn" id="src-de" href="https://github.com/xzgamesstudio/DeathEngine/releases"><span>All versions</span></a>
       </div>
     </div>
 
@@ -348,8 +348,8 @@ a{color:inherit}
       <!-- EDIT: confirm the Unity version you support -->
       <p class="rv" style="font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)">.unitypackage &middot; Unity 2021 LTS or newer</p>
       <div class="hero-cta rv" style="margin-top:22px">
-        <a class="btn btn--solid" id="dl-vn" href="https://github.com/YOUR-USERNAME/FastVisualNovel/releases/latest"><span class="dl">&#9660;</span><span>Download the package</span></a>
-        <a class="btn" id="src-vn" href="https://github.com/YOUR-USERNAME/FastVisualNovel"><span>Docs &amp; source</span></a>
+        <a class="btn btn--solid" id="dl-vn" href="https://github.com/xzgamesstudio/FastVisualNovel/releases/latest"><span class="dl">&#9660;</span><span>Download the package</span></a>
+        <a class="btn" id="src-vn" href="https://github.com/xzgamesstudio/FastVisualNovel"><span>Docs &amp; source</span></a>
       </div>
     </div>
 
@@ -381,7 +381,7 @@ a{color:inherit}
     <p class="rv">Everything on this page is free. If something breaks or you want a feature, open an issue on GitHub &mdash; that's the fastest way to reach me.</p>
     <div class="hero-cta rv" style="margin-top:26px">
       <!-- EDIT: your GitHub profile / contact -->
-      <a class="btn" id="gh-about" href="https://github.com/YOUR-USERNAME"><span>GitHub profile</span></a>
+      <a class="btn" id="gh-about" href="https://github.com/xzgamesstudio"><span>GitHub profile</span></a>
     </div>
   </div>
 </section>
@@ -400,8 +400,8 @@ a{color:inherit}
     <div class="foot-col">
       <span class="lbl">Elsewhere</span>
       <!-- EDIT: swap or remove these -->
-      <a id="gh-foot" href="https://github.com/YOUR-USERNAME">GitHub</a>
-      <a id="itch-foot" href="https://YOUR-USERNAME.itch.io">itch.io</a>
+      <a id="gh-foot" href="https://github.com/xzgamesstudio">GitHub</a>
+      <a id="itch-foot" href="https://xzgamesstudio.itch.io">itch.io</a>
     </div>
   </div>
   <div class="status">
@@ -420,7 +420,7 @@ a{color:inherit}
    here and every download button on the page updates itself.
    --------------------------------------------------------------- */
 var XZ = {
-  github: "YOUR-USERNAME",       // your GitHub username
+  github: "xzgamesstudio",       // your GitHub username
   itch:   "",                    // your itch.io username, or "" to hide the link
   repoAmp: "DeathEngine",        // repo holding the DeathEngine releases
   repoVN:  "FastVisualNovel"     // repo holding the Unity package releases
@@ -431,7 +431,7 @@ var XZ = {
   var g = XZ.github, set = function (id, url) {
     var el = document.getElementById(id); if (el && url) el.href = url;
   };
-  if (g && g !== "YOUR-USERNAME") {
+  if (g && g !== "xzgamesstudio") {
     var base = "https://github.com/" + g;
     ["gh-top", "gh-about", "gh-foot"].forEach(function (i) { set(i, base); });
     set("dl-de",  base + "/" + XZ.repoAmp + "/releases/latest");
